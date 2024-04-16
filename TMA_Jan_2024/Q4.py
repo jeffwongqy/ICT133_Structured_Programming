@@ -1,16 +1,17 @@
 
 bid_list = []
 
-# display menu
-print("<< COE Menu >>")
-print("1. Submit/ Update bid")
-print("2. Remove bid")
-print("3. List bids")
-print("4. Simulate allocation")
-print("0. Quit")
-
 while True:
     count_existing = 0
+
+    # display menu
+    print("<< COE Menu >>")
+    print("1. Submit/ Update bid")
+    print("2. Remove bid")
+    print("3. List bids")
+    print("4. Simulate allocation")
+    print("0. Quit")
+
     # prompt the user for option
     option = int(input("Enter option: "))
 
@@ -77,7 +78,7 @@ while True:
                         # display message
                         print("Bids remove successfully")
                         print()
-                     
+            print()
     elif option == 3:
         # count the number of bids in the list
         num_of_bids = len(bid_list)
